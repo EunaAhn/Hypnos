@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF2E36AA2A0547A500291E9B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E36A92A0547A500291E9B /* Date+Extension.swift */; };
+		FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF2E36AC2A054D3A00291E9B /* Alamofire */; };
+		FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */; };
+		FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */; };
+		FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37E29F61ADB00882B39 /* ContentView.swift */; };
+		FFC5F38129F61ADD00882B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC5F38029F61ADD00882B39 /* Assets.xcassets */; };
+		FFC5F39029F8286300882B39 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F38F29F8286300882B39 /* KakaoSDK */; };
+		FFC5F39229F8286300882B39 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39129F8286300882B39 /* KakaoSDKAuth */; };
+		FFC5F39429F8286300882B39 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39329F8286300882B39 /* KakaoSDKCommon */; };
+		FFC5F39629F8286300882B39 /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39529F8286300882B39 /* KakaoSDKNavi */; };
+		FFC5F39829F8286300882B39 /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39729F8286300882B39 /* KakaoSDKShare */; };
+		FFC5F39A29F8286300882B39 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39929F8286300882B39 /* KakaoSDKTemplate */; };
+		FFC5F39C29F8286300882B39 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = FFC5F39B29F8286300882B39 /* KakaoSDKUser */; };
+		FFC5F39F29F8334800882B39 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F39E29F8334800882B39 /* NaviView.swift */; };
+		FFC5F3A129F9466E00882B39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F3A029F9466E00882B39 /* HomeView.swift */; };
+		FFC5F3A429FAC8ED00882B39 /* MusicNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F3A329FAC8ED00882B39 /* MusicNotificationView.swift */; };
+		FFC5F3A629FAC9BB00882B39 /* MusicSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F3A529FAC9BB00882B39 /* MusicSelectionView.swift */; };
+		FFD221152A0E99FF0057DE8A /* NaviListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD221142A0E99FF0057DE8A /* NaviListView.swift */; };
+		FFD221182A0F4AB90057DE8A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FFD221172A0F4AB90057DE8A /* SwiftyJSON */; };
+		FFD221212A19C2A40057DE8A /* 가벼운 결말.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211A2A19C2A40057DE8A /* 가벼운 결말.mp3 */; };
+		FFD221222A19C2A40057DE8A /* 탁상알람소리.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211B2A19C2A40057DE8A /* 탁상알람소리.mp3 */; };
+		FFD221232A19C2A40057DE8A /* 딩동댕동.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211C2A19C2A40057DE8A /* 딩동댕동.mp3 */; };
+		FFD221242A19C2A40057DE8A /* 오케스트라 연주.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211D2A19C2A40057DE8A /* 오케스트라 연주.mp3 */; };
+		FFD221252A19C2A40057DE8A /* 기상나팔소리.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211E2A19C2A40057DE8A /* 기상나팔소리.mp3 */; };
+		FFD221262A19C2A40057DE8A /* 팡파르 나팔소리.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD2211F2A19C2A40057DE8A /* 팡파르 나팔소리.mp3 */; };
+		FFD221272A19C2A40057DE8A /* 마리오.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD221202A19C2A40057DE8A /* 마리오.mp3 */; };
+		FFD221292A19D41A0057DE8A /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD221282A19D41A0057DE8A /* PlaySound.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF2E36A92A0547A500291E9B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		FFC5F37929F61ADB00882B39 /* Hypnos02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hypnos02App.swift; sourceTree = "<group>"; };
+		FFC5F37E29F61ADB00882B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFC5F38029F61ADD00882B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFC5F39D29F828B800882B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FFC5F39E29F8334800882B39 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
+		FFC5F3A029F9466E00882B39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFC5F3A329FAC8ED00882B39 /* MusicNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicNotificationView.swift; sourceTree = "<group>"; };
+		FFC5F3A529FAC9BB00882B39 /* MusicSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSelectionView.swift; sourceTree = "<group>"; };
+		FFD221142A0E99FF0057DE8A /* NaviListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviListView.swift; sourceTree = "<group>"; };
+		FFD2211A2A19C2A40057DE8A /* 가벼운 결말.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "가벼운 결말.mp3"; sourceTree = "<group>"; };
+		FFD2211B2A19C2A40057DE8A /* 탁상알람소리.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "탁상알람소리.mp3"; sourceTree = "<group>"; };
+		FFD2211C2A19C2A40057DE8A /* 딩동댕동.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "딩동댕동.mp3"; sourceTree = "<group>"; };
+		FFD2211D2A19C2A40057DE8A /* 오케스트라 연주.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "오케스트라 연주.mp3"; sourceTree = "<group>"; };
+		FFD2211E2A19C2A40057DE8A /* 기상나팔소리.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "기상나팔소리.mp3"; sourceTree = "<group>"; };
+		FFD2211F2A19C2A40057DE8A /* 팡파르 나팔소리.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "팡파르 나팔소리.mp3"; sourceTree = "<group>"; };
+		FFD221202A19C2A40057DE8A /* 마리오.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "마리오.mp3"; sourceTree = "<group>"; };
+		FFD221282A19D41A0057DE8A /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFC5F37629F61ADB00882B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD221182A0F4AB90057DE8A /* SwiftyJSON in Frameworks */,
+				FFC5F39029F8286300882B39 /* KakaoSDK in Frameworks */,
+				FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */,
+				FFC5F39429F8286300882B39 /* KakaoSDKCommon in Frameworks */,
+				FFC5F39829F8286300882B39 /* KakaoSDKShare in Frameworks */,
+				FFC5F39C29F8286300882B39 /* KakaoSDKUser in Frameworks */,
+				FFC5F39229F8286300882B39 /* KakaoSDKAuth in Frameworks */,
+				FFC5F39629F8286300882B39 /* KakaoSDKNavi in Frameworks */,
+				FFC5F39A29F8286300882B39 /* KakaoSDKTemplate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFC5F37029F61ADB00882B39 = {
+			isa = PBXGroup;
+			children = (
+				FFC5F37B29F61ADB00882B39 /* Hypnos02 */,
+				FFC5F37A29F61ADB00882B39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC5F37A29F61ADB00882B39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFC5F37929F61ADB00882B39 /* Hypnos02.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC5F37B29F61ADB00882B39 /* Hypnos02 */ = {
+			isa = PBXGroup;
+			children = (
+				FFD221192A19C2800057DE8A /* Sounds */,
+				FFC5F39D29F828B800882B39 /* Info.plist */,
+				FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */,
+				FF2E36A92A0547A500291E9B /* Date+Extension.swift */,
+				FFD221282A19D41A0057DE8A /* PlaySound.swift */,
+				FFC5F3A229F9489600882B39 /* View */,
+				FFC5F38029F61ADD00882B39 /* Assets.xcassets */,
+				FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */,
+			);
+			path = Hypnos02;
+			sourceTree = "<group>";
+		};
+		FFC5F3A229F9489600882B39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC5F37E29F61ADB00882B39 /* ContentView.swift */,
+				FFC5F3A029F9466E00882B39 /* HomeView.swift */,
+				FFC5F3A529FAC9BB00882B39 /* MusicSelectionView.swift */,
+				FFD221142A0E99FF0057DE8A /* NaviListView.swift */,
+				FFC5F3A329FAC8ED00882B39 /* MusicNotificationView.swift */,
+				FFC5F39E29F8334800882B39 /* NaviView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFD221192A19C2800057DE8A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2211A2A19C2A40057DE8A /* 가벼운 결말.mp3 */,
+				FFD2211E2A19C2A40057DE8A /* 기상나팔소리.mp3 */,
+				FFD2211C2A19C2A40057DE8A /* 딩동댕동.mp3 */,
+				FFD221202A19C2A40057DE8A /* 마리오.mp3 */,
+				FFD2211D2A19C2A40057DE8A /* 오케스트라 연주.mp3 */,
+				FFD2211B2A19C2A40057DE8A /* 탁상알람소리.mp3 */,
+				FFD2211F2A19C2A40057DE8A /* 팡파르 나팔소리.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFC5F37829F61ADB00882B39 /* Hypnos02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC5F38729F61ADD00882B39 /* Build configuration list for PBXNativeTarget "Hypnos02" */;
+			buildPhases = (
+				FFC5F37529F61ADB00882B39 /* Sources */,
+				FFC5F37629F61ADB00882B39 /* Frameworks */,
+				FFC5F37729F61ADB00882B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hypnos02;
+			packageProductDependencies = (
+				FFC5F38F29F8286300882B39 /* KakaoSDK */,
+				FFC5F39129F8286300882B39 /* KakaoSDKAuth */,
+				FFC5F39329F8286300882B39 /* KakaoSDKCommon */,
+				FFC5F39529F8286300882B39 /* KakaoSDKNavi */,
+				FFC5F39729F8286300882B39 /* KakaoSDKShare */,
+				FFC5F39929F8286300882B39 /* KakaoSDKTemplate */,
+				FFC5F39B29F8286300882B39 /* KakaoSDKUser */,
+				FF2E36AC2A054D3A00291E9B /* Alamofire */,
+				FFD221172A0F4AB90057DE8A /* SwiftyJSON */,
+			);
+			productName = Hypnos02;
+			productReference = FFC5F37929F61ADB00882B39 /* Hypnos02.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFC5F37129F61ADB00882B39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FFC5F37829F61ADB00882B39 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FFC5F37429F61ADB00882B39 /* Build configuration list for PBXProject "Hypnos02" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFC5F37029F61ADB00882B39;
+			packageReferences = (
+				FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FFD221162A0F4AB90057DE8A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = FFC5F37A29F61ADB00882B39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFC5F37829F61ADB00882B39 /* Hypnos02 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFC5F37729F61ADB00882B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC5F38129F61ADD00882B39 /* Assets.xcassets in Resources */,
+				FFD221252A19C2A40057DE8A /* 기상나팔소리.mp3 in Resources */,
+				FFD221242A19C2A40057DE8A /* 오케스트라 연주.mp3 in Resources */,
+				FFD221262A19C2A40057DE8A /* 팡파르 나팔소리.mp3 in Resources */,
+				FFD221222A19C2A40057DE8A /* 탁상알람소리.mp3 in Resources */,
+				FFD221272A19C2A40057DE8A /* 마리오.mp3 in Resources */,
+				FFD221212A19C2A40057DE8A /* 가벼운 결말.mp3 in Resources */,
+				FFD221232A19C2A40057DE8A /* 딩동댕동.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFC5F37529F61ADB00882B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD221152A0E99FF0057DE8A /* NaviListView.swift in Sources */,
+				FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */,
+				FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */,
+				FFC5F3A129F9466E00882B39 /* HomeView.swift in Sources */,
+				FFC5F39F29F8334800882B39 /* NaviView.swift in Sources */,
+				FFD221292A19D41A0057DE8A /* PlaySound.swift in Sources */,
+				FFC5F3A629FAC9BB00882B39 /* MusicSelectionView.swift in Sources */,
+				FF2E36AA2A0547A500291E9B /* Date+Extension.swift in Sources */,
+				FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */,
+				FFC5F3A429FAC8ED00882B39 /* MusicNotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFC5F38529F61ADD00882B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Hypnos;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFC5F38629F61ADD00882B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Hypnos;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFC5F38829F61ADD00882B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hypnos02/Preview Content\"";
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hypnos02/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digipine.Hypnos02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFC5F38929F61ADD00882B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hypnos02/Preview Content\"";
+				DEVELOPMENT_TEAM = L7ZDVPAZ3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hypnos02/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digipine.Hypnos02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFC5F37429F61ADB00882B39 /* Build configuration list for PBXProject "Hypnos02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC5F38529F61ADD00882B39 /* Debug */,
+				FFC5F38629F61ADD00882B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC5F38729F61ADD00882B39 /* Build configuration list for PBXNativeTarget "Hypnos02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC5F38829F61ADD00882B39 /* Debug */,
+				FFC5F38929F61ADD00882B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FFD221162A0F4AB90057DE8A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF2E36AC2A054D3A00291E9B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FFC5F38F29F8286300882B39 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		FFC5F39129F8286300882B39 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		FFC5F39329F8286300882B39 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		FFC5F39529F8286300882B39 /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		FFC5F39729F8286300882B39 /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		FFC5F39929F8286300882B39 /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		FFC5F39B29F8286300882B39 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		FFD221172A0F4AB90057DE8A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD221162A0F4AB90057DE8A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FFC5F37129F61ADB00882B39 /* Project object */;
+}
