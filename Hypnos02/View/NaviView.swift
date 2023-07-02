@@ -83,7 +83,8 @@ struct NaviView: View {
     }
 }
 
-struct NaviView_Previews: PreviewProvider {
+
+struct Previews_NaviView: PreviewProvider {
     static var previews: some View {
         NaviView()
     }
