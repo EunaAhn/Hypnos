@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		FF2E36AA2A0547A500291E9B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E36A92A0547A500291E9B /* Date+Extension.swift */; };
 		FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF2E36AC2A054D3A00291E9B /* Alamofire */; };
+		FF40183B2A6921BE00C58D8B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40183A2A6921BE00C58D8B /* LoginView.swift */; };
+		FF40183E2A69245500C58D8B /* inputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40183D2A69245500C58D8B /* inputView.swift */; };
+		FF4018402A6929CA00C58D8B /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40183F2A6929CA00C58D8B /* RegistrationView.swift */; };
+		FF4018432A69697800C58D8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018422A69697800C58D8B /* ProfileView.swift */; };
+		FF4018452A6A4E4500C58D8B /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */; };
 		FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */; };
 		FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */; };
 		FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37E29F61ADB00882B39 /* ContentView.swift */; };
@@ -38,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		FF2E36A92A0547A500291E9B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FF40183A2A6921BE00C58D8B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF40183D2A69245500C58D8B /* inputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputView.swift; sourceTree = "<group>"; };
+		FF40183F2A6929CA00C58D8B /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FF4018422A69697800C58D8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		FFC5F37929F61ADB00882B39 /* Hypnos02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hypnos02App.swift; sourceTree = "<group>"; };
@@ -79,6 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF4018392A69216D00C58D8B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FF40183A2A6921BE00C58D8B /* LoginView.swift */,
+				FF40183F2A6929CA00C58D8B /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FF40183C2A69242600C58D8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF40183D2A69245500C58D8B /* inputView.swift */,
+				FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FF4018412A69693F00C58D8B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF4018422A69697800C58D8B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		FFC5F37029F61ADB00882B39 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +134,9 @@
 		FFC5F37B29F61ADB00882B39 /* Hypnos02 */ = {
 			isa = PBXGroup;
 			children = (
+				FF4018412A69693F00C58D8B /* Profile */,
+				FF40183C2A69242600C58D8B /* Components */,
+				FF4018392A69216D00C58D8B /* Authentication */,
 				FFD221192A19C2800057DE8A /* Sounds */,
 				FFC5F39D29F828B800882B39 /* Info.plist */,
 				FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */,
@@ -231,13 +270,18 @@
 			files = (
 				FFD221152A0E99FF0057DE8A /* NaviListView.swift in Sources */,
 				FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */,
+				FF4018452A6A4E4500C58D8B /* SettingsRowView.swift in Sources */,
 				FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */,
+				FF4018402A6929CA00C58D8B /* RegistrationView.swift in Sources */,
 				FFC5F3A129F9466E00882B39 /* HomeView.swift in Sources */,
 				FFC5F39F29F8334800882B39 /* NaviView.swift in Sources */,
 				FFD221292A19D41A0057DE8A /* PlaySound.swift in Sources */,
 				FFC5F3A629FAC9BB00882B39 /* MusicSelectionView.swift in Sources */,
 				FF2E36AA2A0547A500291E9B /* Date+Extension.swift in Sources */,
+				FF40183B2A6921BE00C58D8B /* LoginView.swift in Sources */,
+				FF40183E2A69245500C58D8B /* inputView.swift in Sources */,
 				FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */,
+				FF4018432A69697800C58D8B /* ProfileView.swift in Sources */,
 				FFC5F3A429FAC8ED00882B39 /* MusicNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

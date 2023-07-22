@@ -198,8 +198,8 @@ struct HomeView: View {
         // JSON 데이터 가져오기
         let url = "http://www.digipine.com:1502/getsleepycount" // JSON 데이터가 있는 URL을 입력하세요
         let parameters: Parameters = [
-            "userID": "euna001",
-            "month": "05",
+            "userID": "Muse-D0F8",
+            "month": "06",
             "year": "2023"
         ]
         

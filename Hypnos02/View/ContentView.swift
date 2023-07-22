@@ -24,7 +24,7 @@ struct ContentView: View {
                 
             }
             
-            Text("MyProfile").tabItem {
+            ProfileView().tabItem {
                 Label("MyProfile", systemImage: "person.fill")
             }
             
