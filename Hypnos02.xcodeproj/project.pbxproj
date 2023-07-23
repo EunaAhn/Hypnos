@@ -15,6 +15,13 @@
 		FF4018432A69697800C58D8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018422A69697800C58D8B /* ProfileView.swift */; };
 		FF4018452A6A4E4500C58D8B /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */; };
 		FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */; };
+		FF7572F72A6B84D0004BC0ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7572F62A6B84D0004BC0ED /* User.swift */; };
+		FF7572F92A6BFDA5004BC0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF7572F82A6BFDA5004BC0ED /* GoogleService-Info.plist */; };
+		FF7572FC2A6BFEC3004BC0ED /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */; };
+		FF7572FE2A6BFEC3004BC0ED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */; };
+		FF7573002A6BFEC3004BC0ED /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */; };
+		FF7573022A6BFEC3004BC0ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF7573012A6BFEC3004BC0ED /* FirebaseStorage */; };
+		FF7573072A6BFF76004BC0ED /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7573062A6BFF76004BC0ED /* AuthViewModel.swift */; };
 		FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */; };
 		FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37E29F61ADB00882B39 /* ContentView.swift */; };
 		FFC5F38129F61ADD00882B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC5F38029F61ADD00882B39 /* Assets.xcassets */; };
@@ -49,6 +56,9 @@
 		FF4018422A69697800C58D8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		FF7572F62A6B84D0004BC0ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF7572F82A6BFDA5004BC0ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF7573062A6BFF76004BC0ED /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthViewModel.swift; path = ../../../../../../Hypnos02/Hypnos02/Model/AuthViewModel.swift; sourceTree = "<group>"; };
 		FFC5F37929F61ADB00882B39 /* Hypnos02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hypnos02App.swift; sourceTree = "<group>"; };
 		FFC5F37E29F61ADB00882B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,14 +85,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD221182A0F4AB90057DE8A /* SwiftyJSON in Frameworks */,
+				FF7572FC2A6BFEC3004BC0ED /* FirebaseAuth in Frameworks */,
 				FFC5F39029F8286300882B39 /* KakaoSDK in Frameworks */,
 				FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */,
 				FFC5F39429F8286300882B39 /* KakaoSDKCommon in Frameworks */,
 				FFC5F39829F8286300882B39 /* KakaoSDKShare in Frameworks */,
 				FFC5F39C29F8286300882B39 /* KakaoSDKUser in Frameworks */,
 				FFC5F39229F8286300882B39 /* KakaoSDKAuth in Frameworks */,
+				FF7573022A6BFEC3004BC0ED /* FirebaseStorage in Frameworks */,
 				FFC5F39629F8286300882B39 /* KakaoSDKNavi in Frameworks */,
+				FF7572FE2A6BFEC3004BC0ED /* FirebaseFirestore in Frameworks */,
 				FFC5F39A29F8286300882B39 /* KakaoSDKTemplate in Frameworks */,
+				FF7573002A6BFEC3004BC0ED /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +106,8 @@
 		FF4018392A69216D00C58D8B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				FF7573042A6BFF12004BC0ED /* View */,
+				FF7573052A6BFF1E004BC0ED /* ViewModel */,
 				FF40183A2A6921BE00C58D8B /* LoginView.swift */,
 				FF40183F2A6929CA00C58D8B /* RegistrationView.swift */,
 			);
@@ -115,6 +131,29 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		FF7572F52A6B84BF004BC0ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF7572F62A6B84D0004BC0ED /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF7573042A6BFF12004BC0ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF7573052A6BFF1E004BC0ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7573062A6BFF76004BC0ED /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FFC5F37029F61ADB00882B39 = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +173,14 @@
 		FFC5F37B29F61ADB00882B39 /* Hypnos02 */ = {
 			isa = PBXGroup;
 			children = (
+				FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */,
+				FF7572F52A6B84BF004BC0ED /* Model */,
 				FF4018412A69693F00C58D8B /* Profile */,
 				FF40183C2A69242600C58D8B /* Components */,
 				FF4018392A69216D00C58D8B /* Authentication */,
 				FFD221192A19C2800057DE8A /* Sounds */,
 				FFC5F39D29F828B800882B39 /* Info.plist */,
-				FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */,
+				FF7572F82A6BFDA5004BC0ED /* GoogleService-Info.plist */,
 				FF2E36A92A0547A500291E9B /* Date+Extension.swift */,
 				FFD221282A19D41A0057DE8A /* PlaySound.swift */,
 				FFC5F3A229F9489600882B39 /* View */,
@@ -202,6 +243,10 @@
 				FFC5F39B29F8286300882B39 /* KakaoSDKUser */,
 				FF2E36AC2A054D3A00291E9B /* Alamofire */,
 				FFD221172A0F4AB90057DE8A /* SwiftyJSON */,
+				FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */,
+				FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */,
+				FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */,
+				FF7573012A6BFEC3004BC0ED /* FirebaseStorage */,
 			);
 			productName = Hypnos02;
 			productReference = FFC5F37929F61ADB00882B39 /* Hypnos02.app */;
@@ -235,6 +280,7 @@
 				FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FFD221162A0F4AB90057DE8A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = FFC5F37A29F61ADB00882B39 /* Products */;
 			projectDirPath = "";
@@ -252,6 +298,7 @@
 			files = (
 				FFC5F38129F61ADD00882B39 /* Assets.xcassets in Resources */,
 				FFD221252A19C2A40057DE8A /* 기상나팔소리.mp3 in Resources */,
+				FF7572F92A6BFDA5004BC0ED /* GoogleService-Info.plist in Resources */,
 				FFD221242A19C2A40057DE8A /* 오케스트라 연주.mp3 in Resources */,
 				FFD221262A19C2A40057DE8A /* 팡파르 나팔소리.mp3 in Resources */,
 				FFD221222A19C2A40057DE8A /* 탁상알람소리.mp3 in Resources */,
@@ -272,8 +319,10 @@
 				FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */,
 				FF4018452A6A4E4500C58D8B /* SettingsRowView.swift in Sources */,
 				FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */,
+				FF7572F72A6B84D0004BC0ED /* User.swift in Sources */,
 				FF4018402A6929CA00C58D8B /* RegistrationView.swift in Sources */,
 				FFC5F3A129F9466E00882B39 /* HomeView.swift in Sources */,
+				FF7573072A6BFF76004BC0ED /* AuthViewModel.swift in Sources */,
 				FFC5F39F29F8334800882B39 /* NaviView.swift in Sources */,
 				FFD221292A19D41A0057DE8A /* PlaySound.swift in Sources */,
 				FFC5F3A629FAC9BB00882B39 /* MusicSelectionView.swift in Sources */,
@@ -497,6 +546,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		FFC5F38E29F8286300882B39 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
@@ -520,6 +577,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FF7573012A6BFEC3004BC0ED /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		FFC5F38F29F8286300882B39 /* KakaoSDK */ = {
 			isa = XCSwiftPackageProductDependency;

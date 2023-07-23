@@ -11,25 +11,30 @@ import KakaoSDKNavi
 
 struct ContentView: View {
     @State private var selectedTrack: Track?
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        TabView{
+        Group {
+            if viewModel.userSession != nil {
+                TabView{
+                    HomeView(selectedTrack: $selectedTrack).tabItem{
+                        Label("Home",systemImage: "house")
+                    }
 
-            HomeView(selectedTrack: $selectedTrack).tabItem{
-                Label("Home",systemImage: "house")
+                    NaviListView().tabItem {
+                        Label("Navi", systemImage: "paperplane.circle.fill")
+                        
+                    }
+                    
+                    ProfileView().tabItem {
+                        Label("MyProfile", systemImage: "person.fill")
+                    }
+                    
+                }
+            } else {
+                LoginView()
             }
-
-            NaviListView().tabItem {
-                Label("Navi", systemImage: "paperplane.circle.fill")
-                
-            }
-            
-            ProfileView().tabItem {
-                Label("MyProfile", systemImage: "person.fill")
-            }
-            
         }
-        
     }
 }
 
