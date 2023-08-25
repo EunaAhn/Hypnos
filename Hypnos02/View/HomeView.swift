@@ -29,6 +29,7 @@ struct HomeView: View {
     @State private var keyword = ""
     @State private var resultList = [Place]()
     @ObservedObject private var locationManagerDelegate = LocationManagerDelegate()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     let curGradient = LinearGradient(
         gradient: Gradient (
@@ -196,113 +197,117 @@ struct HomeView: View {
     
     func fetchData() {
         // JSON 데이터 가져오기
-        let url = "http://www.digipine.com:1502/getsleepycount" // JSON 데이터가 있는 URL을 입력하세요
-        let parameters: Parameters = [
-            "userID": "Muse-D0F8",
-            "month": "06",
-            "year": "2023"
-        ]
-        
-        AF.request(url,
-                   method: .post, // HTTP메서드 설정
-                   parameters: parameters, // 파라미터 설정
-                   encoding: JSONEncoding.default, // 인코딩 타입 설정
-                   headers: ["Content-Type":"application/json", "Accept":"*/*"]) // 헤더 설정
-        .validate(statusCode: 200..<300) // 유효성 검사
-        .responseDecodable(of: ResponseData.self) { response in
-            switch response.result {
-            case .success(_):
-                if let rawData = response.data, let rawDataString = String(data: rawData, encoding: .utf8) {
-                    print("원시 데이터:")
-                    print(rawDataString)
-                }
+        if let user = viewModel.currentUser {
+            let url = "http://www.digipine.com:1502/getsleepycount" // JSON 데이터가 있는 URL을 입력하세요
+            let parameters: Parameters = [
+                "userID": user.modelnumber,
+                "month": "06",
+                "year": "2023"
+            ]
+            
+            AF.request(url,
+                       method: .post, // HTTP메서드 설정
+                       parameters: parameters, // 파라미터 설정
+                       encoding: JSONEncoding.default, // 인코딩 타입 설정
+                       headers: ["Content-Type":"application/json", "Accept":"*/*"]) // 헤더 설정
+            .validate(statusCode: 200..<300) // 유효성 검사
+            .responseDecodable(of: ResponseData.self) { response in
+                switch response.result {
+                case .success(_):
+                    if let rawData = response.data, let rawDataString = String(data: rawData, encoding: .utf8) {
+                        print("원시 데이터:")
+                        print(rawDataString)
+                    }
+                        
                     
-                
-                if let responseData = try? JSONDecoder().decode(ResponseData.self, from: response.data!) {
-                    let msg = responseData.error.msg
-//                    for list in msg {
-//                        print("data=\(list.date.debugDescription)")
-//                        print("sleepycnt=\(list.sleepycnt.debugDescription)")
-//                    }
-                    
-                    
-                    // JSON 파싱하여 viewMonths 배열에 데이터 추가
-                    var months: [ViewMonth] = []
-                    for item in msg {
-                        if let dateString = item.date,
-                           let sleepCount = item.sleepycnt {
-                            print("data_org=\(dateString)")
- 
-                            if let date = parseDate(dateString) {
-                                let month = ViewMonth(date: date, viewCount: sleepCount)
-                                months.append(month)
+                    if let responseData = try? JSONDecoder().decode(ResponseData.self, from: response.data!) {
+                        let msg = responseData.error.msg
+    //                    for list in msg {
+    //                        print("data=\(list.date.debugDescription)")
+    //                        print("sleepycnt=\(list.sleepycnt.debugDescription)")
+    //                    }
+                        
+                        
+                        // JSON 파싱하여 viewMonths 배열에 데이터 추가
+                        var months: [ViewMonth] = []
+                        for item in msg {
+                            if let dateString = item.date,
+                               let sleepCount = item.sleepycnt {
+                                print("data_org=\(dateString)")
+     
+                                if let date = parseDate(dateString) {
+                                    let month = ViewMonth(date: date, viewCount: sleepCount)
+                                    months.append(month)
+                                }
                             }
                         }
+                        viewMonths = months
+                        
+                        // JSON 파싱 결과를 확인하기 위해 콘솔에 출력
+                        print("파싱된 JSON:")
+                        for month in viewMonths {
+                            print("날짜: \(month.date), 졸음 횟수: \(month.viewCount)")
+                        }
+                        
+                    } else {
+                        print("JSON 디코딩에 실패했습니다.")
                     }
-                    viewMonths = months
                     
-                    // JSON 파싱 결과를 확인하기 위해 콘솔에 출력
-                    print("파싱된 JSON:")
-                    for month in viewMonths {
-                        print("날짜: \(month.date), 졸음 횟수: \(month.viewCount)")
-                    }
-                    
-                } else {
-                    print("JSON 디코딩에 실패했습니다.")
+                case .failure(let error):
+                    print("에러: \(error)")
                 }
-                
-            case .failure(let error):
-                print("에러: \(error)")
             }
         }
-        
     }
     
     // Fetch device status from JSON API
     func fetchDeviceStatus() {
-        let url = "http://www.digipine.com:1502/getsleepystatus"
-        let parameters: Parameters = [
-            "userID": "euna001"
-        ]
-        
-        AF.request(url,
-                    method: .post,
-                    parameters: parameters,
-                    encoding: JSONEncoding.default,
-                    headers: ["Content-Type":"application/json", "Accept":"*/*"])
-            .validate(statusCode: 200..<300)
-            .responseDecodable(of: DeviceStatusResponse.self) { response in
-                switch response.result {
-                case .success(_):
-                    //if let rawData = response.data, let rawDataString = String(data: rawData, encoding: .utf8) {
-                   //     print("원시 데이터:")
-                   //     print(rawDataString)
-                   // }
-                    
-                    if let responseData = try? JSONDecoder().decode(DeviceStatusResponse.self, from: response.data!) {
-                        let msg = responseData.error.msg
+        if let user = viewModel.currentUser {
+            let url = "http://www.digipine.com:1502/getsleepystatus"
+            let parameters: Parameters = [
+                "userID": user.modelnumber
+            ]
+            
+            AF.request(url,
+                        method: .post,
+                        parameters: parameters,
+                        encoding: JSONEncoding.default,
+                        headers: ["Content-Type":"application/json", "Accept":"*/*"])
+                .validate(statusCode: 200..<300)
+                .responseDecodable(of: DeviceStatusResponse.self) { response in
+                    switch response.result {
+                    case .success(_):
+                        //if let rawData = response.data, let rawDataString = String(data: rawData, encoding: .utf8) {
+                       //     print("원시 데이터:")
+                       //     print(rawDataString)
+                       // }
                         
-                        for item in msg {
-                            if let sleepy = item.sleepy {
-                                if let sleepyStatus = item.sleepy {
-                                    print("sleepyStatus:\(sleepyStatus)")
-                                    //isPlayingMusic = (sleepyStatus == 1)
-                                    //playSound(key: )
-                                    if let track = selectedTrack {
-                                        let key = track.title
-                                        playSound(key: key)
+                        if let responseData = try? JSONDecoder().decode(DeviceStatusResponse.self, from: response.data!) {
+                            let msg = responseData.error.msg
+                            
+                            for item in msg {
+                                if let sleepy = item.sleepy {
+                                    if let sleepyStatus = item.sleepy {
+                                        print("sleepyStatus:\(sleepyStatus)")
+                                        //isPlayingMusic = (sleepyStatus == 1)
+                                        //playSound(key: )
+                                        if let track = selectedTrack {
+                                            let key = track.title
+                                            playSound(key: key)
+                                        }
+                                        
+                                        alertView()
                                     }
-                                    
-                                    alertView()
                                 }
                             }
                         }
+                        
+                    case .failure(let error):
+                        print("Error: \(error)")
                     }
-                    
-                case .failure(let error):
-                    print("Error: \(error)")
                 }
-            }
+        }
+        
     }
     
     func alertView(){
