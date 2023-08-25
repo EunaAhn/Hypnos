@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @State private var email = ""
-    @State private var fullname = ""
+    @State private var modelnumber = ""
     @State private var password = ""
     @State private var confirmPassword = ""
     @Environment(\.dismiss) var dismiss
@@ -28,7 +28,7 @@ struct RegistrationView: View {
                 inputView(text: $email, title: "Email Address", placeholder: "name@example.com")
                     .autocapitalization(.none)
                 
-                inputView(text: $fullname, title: "Full Name", placeholder: "Enter your name")
+                inputView(text: $modelnumber, title: "Model Number", placeholder: "Enter your model number")
                 
                 inputView(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
                 
@@ -55,7 +55,7 @@ struct RegistrationView: View {
             
             Button {
                 Task {
-                    try await viewModel.createUser(withEmail: email, password: password, fullname: fullname)
+                    try await viewModel.createUser(withEmail: email, password: password, modelnumber: modelnumber)
                 }
             } label: {
                 HStack{
@@ -98,7 +98,7 @@ extension RegistrationView: AuthenticationFormProtocol {
         && !password.isEmpty
         && password.count > 5
         && confirmPassword == password
-        && !fullname.isEmpty
+        && !modelnumber.isEmpty
     }
 }
 

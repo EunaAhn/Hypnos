@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B66A3BA15271C313B0A9039 /* Pods_Hypnos02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEACF3EAFF2128BDE96EB64 /* Pods_Hypnos02.framework */; };
 		FF2E36AA2A0547A500291E9B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E36A92A0547A500291E9B /* Date+Extension.swift */; };
 		FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF2E36AC2A054D3A00291E9B /* Alamofire */; };
 		FF40183B2A6921BE00C58D8B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40183A2A6921BE00C58D8B /* LoginView.swift */; };
@@ -14,13 +15,15 @@
 		FF4018402A6929CA00C58D8B /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40183F2A6929CA00C58D8B /* RegistrationView.swift */; };
 		FF4018432A69697800C58D8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018422A69697800C58D8B /* ProfileView.swift */; };
 		FF4018452A6A4E4500C58D8B /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4018442A6A4E4500C58D8B /* SettingsRowView.swift */; };
+		FF4B39F72A9853E500500450 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B39F62A9853E500500450 /* FirebaseAuth */; };
+		FF4B39F92A9853F200500450 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B39F82A9853F200500450 /* FirebaseFirestore */; };
+		FF4B39FB2A9853FC00500450 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B39FA2A9853FC00500450 /* FirebaseFirestoreSwift */; };
+		FF4B39FD2A98540800500450 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B39FC2A98540800500450 /* FirebaseStorage */; };
+		FF4B39FF2A98541F00500450 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B39FE2A98541F00500450 /* FirebaseAnalytics */; };
+		FF4B3A012A98542600500450 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B3A002A98542600500450 /* FirebaseAnalyticsSwift */; };
 		FF74D50E2A052D3C00757AC8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74D50D2A052D3C00757AC8 /* SwiftUIView.swift */; };
 		FF7572F72A6B84D0004BC0ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7572F62A6B84D0004BC0ED /* User.swift */; };
 		FF7572F92A6BFDA5004BC0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF7572F82A6BFDA5004BC0ED /* GoogleService-Info.plist */; };
-		FF7572FC2A6BFEC3004BC0ED /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */; };
-		FF7572FE2A6BFEC3004BC0ED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */; };
-		FF7573002A6BFEC3004BC0ED /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */; };
-		FF7573022A6BFEC3004BC0ED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF7573012A6BFEC3004BC0ED /* FirebaseStorage */; };
 		FF7573072A6BFF76004BC0ED /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7573062A6BFF76004BC0ED /* AuthViewModel.swift */; };
 		FFC5F37D29F61ADB00882B39 /* Hypnos02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37C29F61ADB00882B39 /* Hypnos02App.swift */; };
 		FFC5F37F29F61ADB00882B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5F37E29F61ADB00882B39 /* ContentView.swift */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ADC55F3DE13051ED0AA357F /* Pods-Hypnos02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hypnos02.release.xcconfig"; path = "Target Support Files/Pods-Hypnos02/Pods-Hypnos02.release.xcconfig"; sourceTree = "<group>"; };
+		7EF301DAFBF9BA4FFA3D76C8 /* Pods-Hypnos02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hypnos02.debug.xcconfig"; path = "Target Support Files/Pods-Hypnos02/Pods-Hypnos02.debug.xcconfig"; sourceTree = "<group>"; };
+		BAEACF3EAFF2128BDE96EB64 /* Pods_Hypnos02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hypnos02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2E36A92A0547A500291E9B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		FF40183A2A6921BE00C58D8B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FF40183D2A69245500C58D8B /* inputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputView.swift; sourceTree = "<group>"; };
@@ -84,29 +90,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4B39FF2A98541F00500450 /* FirebaseAnalytics in Frameworks */,
 				FFD221182A0F4AB90057DE8A /* SwiftyJSON in Frameworks */,
-				FF7572FC2A6BFEC3004BC0ED /* FirebaseAuth in Frameworks */,
+				FF4B39F72A9853E500500450 /* FirebaseAuth in Frameworks */,
 				FFC5F39029F8286300882B39 /* KakaoSDK in Frameworks */,
 				FF2E36AD2A054D3A00291E9B /* Alamofire in Frameworks */,
 				FFC5F39429F8286300882B39 /* KakaoSDKCommon in Frameworks */,
 				FFC5F39829F8286300882B39 /* KakaoSDKShare in Frameworks */,
 				FFC5F39C29F8286300882B39 /* KakaoSDKUser in Frameworks */,
 				FFC5F39229F8286300882B39 /* KakaoSDKAuth in Frameworks */,
-				FF7573022A6BFEC3004BC0ED /* FirebaseStorage in Frameworks */,
+				FF4B3A012A98542600500450 /* FirebaseAnalyticsSwift in Frameworks */,
+				FF4B39FD2A98540800500450 /* FirebaseStorage in Frameworks */,
 				FFC5F39629F8286300882B39 /* KakaoSDKNavi in Frameworks */,
-				FF7572FE2A6BFEC3004BC0ED /* FirebaseFirestore in Frameworks */,
+				FF4B39F92A9853F200500450 /* FirebaseFirestore in Frameworks */,
 				FFC5F39A29F8286300882B39 /* KakaoSDKTemplate in Frameworks */,
-				FF7573002A6BFEC3004BC0ED /* FirebaseFirestoreSwift in Frameworks */,
+				FF4B39FB2A9853FC00500450 /* FirebaseFirestoreSwift in Frameworks */,
+				1B66A3BA15271C313B0A9039 /* Pods_Hypnos02.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7BC03FCEB6F63DAE49198E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF301DAFBF9BA4FFA3D76C8 /* Pods-Hypnos02.debug.xcconfig */,
+				0ADC55F3DE13051ED0AA357F /* Pods-Hypnos02.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6A67E2D7201CD5B161FF41C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAEACF3EAFF2128BDE96EB64 /* Pods_Hypnos02.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF4018392A69216D00C58D8B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				FF7573042A6BFF12004BC0ED /* View */,
 				FF7573052A6BFF1E004BC0ED /* ViewModel */,
 				FF40183A2A6921BE00C58D8B /* LoginView.swift */,
 				FF40183F2A6929CA00C58D8B /* RegistrationView.swift */,
@@ -139,13 +164,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FF7573042A6BFF12004BC0ED /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		FF7573052A6BFF1E004BC0ED /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +177,8 @@
 			children = (
 				FFC5F37B29F61ADB00882B39 /* Hypnos02 */,
 				FFC5F37A29F61ADB00882B39 /* Products */,
+				C6A67E2D7201CD5B161FF41C /* Frameworks */,
+				A7BC03FCEB6F63DAE49198E3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC5F38729F61ADD00882B39 /* Build configuration list for PBXNativeTarget "Hypnos02" */;
 			buildPhases = (
+				D46F8D70750CB5B0D86DDC09 /* [CP] Check Pods Manifest.lock */,
 				FFC5F37529F61ADB00882B39 /* Sources */,
 				FFC5F37629F61ADB00882B39 /* Frameworks */,
 				FFC5F37729F61ADB00882B39 /* Resources */,
@@ -243,10 +264,12 @@
 				FFC5F39B29F8286300882B39 /* KakaoSDKUser */,
 				FF2E36AC2A054D3A00291E9B /* Alamofire */,
 				FFD221172A0F4AB90057DE8A /* SwiftyJSON */,
-				FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */,
-				FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */,
-				FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */,
-				FF7573012A6BFEC3004BC0ED /* FirebaseStorage */,
+				FF4B39F62A9853E500500450 /* FirebaseAuth */,
+				FF4B39F82A9853F200500450 /* FirebaseFirestore */,
+				FF4B39FA2A9853FC00500450 /* FirebaseFirestoreSwift */,
+				FF4B39FC2A98540800500450 /* FirebaseStorage */,
+				FF4B39FE2A98541F00500450 /* FirebaseAnalytics */,
+				FF4B3A002A98542600500450 /* FirebaseAnalyticsSwift */,
 			);
 			productName = Hypnos02;
 			productReference = FFC5F37929F61ADB00882B39 /* Hypnos02.app */;
@@ -309,6 +332,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D46F8D70750CB5B0D86DDC09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hypnos02-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFC5F37529F61ADB00882B39 /* Sources */ = {
@@ -456,6 +504,7 @@
 		};
 		FFC5F38829F61ADD00882B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF301DAFBF9BA4FFA3D76C8 /* Pods-Hypnos02.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +535,7 @@
 		};
 		FFC5F38929F61ADD00882B39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADC55F3DE13051ED0AA357F /* Pods-Hypnos02.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -578,25 +628,35 @@
 			package = FF2E36AB2A054D3A00291E9B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		FF7572FB2A6BFEC3004BC0ED /* FirebaseAuth */ = {
+		FF4B39F62A9853E500500450 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		FF7572FD2A6BFEC3004BC0ED /* FirebaseFirestore */ = {
+		FF4B39F82A9853F200500450 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		FF7572FF2A6BFEC3004BC0ED /* FirebaseFirestoreSwift */ = {
+		FF4B39FA2A9853FC00500450 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
 		};
-		FF7573012A6BFEC3004BC0ED /* FirebaseStorage */ = {
+		FF4B39FC2A98540800500450 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		FF4B39FE2A98541F00500450 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FF4B3A002A98542600500450 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7572FA2A6BFEC3004BC0ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
 		};
 		FFC5F38F29F8286300882B39 /* KakaoSDK */ = {
 			isa = XCSwiftPackageProductDependency;

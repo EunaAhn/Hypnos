@@ -55,20 +55,19 @@ struct HomeView: View {
                     
                     Spacer()
                 }
-                Spacer()
-                VStack {
-                    HStack { // Add a HStack to contain the "Fetch Data" button and the text views
-                        VStack {
+                
+                VStack(alignment: .leading) {
+                    HStack(alignment: .top){ // Add a HStack to contain the "Fetch Data" button and the text views
+                        VStack(alignment: .leading) {
                             Text("졸음횟수")
-                                .padding(.top, -75.0)
+                                //.padding(.top, 10)
                             Text("Total: \(viewMonths.reduce(0, { $0 + $1.viewCount }))")
                                 .fontWeight(.semibold)
                                 .font(.footnote)
-                                .padding(.vertical, -65.0)
+                                //.padding(.vertical, 20)
                                 .foregroundColor(.gray)
                         }
                         
-                        Spacer()
                         
                         Button(action: {
                             fetchData()
@@ -84,10 +83,11 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .background(.blue.opacity(0.7))
                         .clipShape(Capsule())
-                        .padding(.top, -85.0)
+                        //.padding(.top, 10)
                         
                     }
                     
+                    //Spacer().frame(height: 10)
                     
                     Chart {
                         ForEach(viewMonths){ viewMonth in
@@ -116,7 +116,7 @@ struct HomeView: View {
                             
                         }
                     }
-                    .padding(.top, -50.0)
+                    //.padding(.top, 10.0)
                     .frame(height: 150.0)
                     
                     Divider().padding(5)
