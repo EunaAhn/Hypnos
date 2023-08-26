@@ -18,7 +18,7 @@ struct RegistrationView: View {
     var body: some View {
         VStack {
             // image
-            Image("icon_1")
+            Image("icon_2")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 120)
