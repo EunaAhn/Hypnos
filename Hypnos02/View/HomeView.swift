@@ -61,11 +61,11 @@ struct HomeView: View {
                     HStack(alignment: .top){ // Add a HStack to contain the "Fetch Data" button and the text views
                         VStack(alignment: .leading) {
                             Text("졸음횟수")
-                                //.padding(.top, 10)
+                                .padding(.top, -50)
                             Text("Total: \(viewMonths.reduce(0, { $0 + $1.viewCount }))")
                                 .fontWeight(.semibold)
                                 .font(.footnote)
-                                //.padding(.vertical, 20)
+                                .padding(.vertical, -40)
                                 .foregroundColor(.gray)
                         }
                         
@@ -84,7 +84,7 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .background(.blue.opacity(0.7))
                         .clipShape(Capsule())
-                        //.padding(.top, 10)
+                        .padding(.top, -50)
                         
                     }
                     
@@ -117,8 +117,8 @@ struct HomeView: View {
                             
                         }
                     }
-                    //.padding(.top, 10.0)
-                    .frame(height: 150.0)
+                    .padding(.top, -10.0)
+                    .frame(height: 200.0)
                     
                     Divider().padding(5)
                     
@@ -289,14 +289,14 @@ struct HomeView: View {
                                 if let sleepy = item.sleepy {
                                     if let sleepyStatus = item.sleepy {
                                         print("sleepyStatus:\(sleepyStatus)")
-                                        //isPlayingMusic = (sleepyStatus == 1)
-                                        //playSound(key: )
-                                        if let track = selectedTrack {
-                                            let key = track.title
-                                            playSound(key: key)
+                                        if (sleepyStatus == 1){
+                                            if let track = selectedTrack {
+                                                let key = track.title
+                                                playSound(key: key)
+                                            }
+                                            alertView()
                                         }
-                                        
-                                        alertView()
+    
                                     }
                                 }
                             }
@@ -495,13 +495,13 @@ struct HomeView: View {
         let viewCount: Int
     }
     
-    
-    struct HomeView_Previews: PreviewProvider {
-        static var previews: some View {
-            HomeView(selectedTrack: .constant(nil))
-        }
-    }
 }
+
+/*struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView(selectedTrack: .constant(nil))
+    }
+}*/
 
 struct NavigationBarModifier: ViewModifier {
 
