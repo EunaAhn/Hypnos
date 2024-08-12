@@ -1,18 +1,18 @@
 # Hypnos: 뇌파 기반 졸음 감지 서비스
 
-![히프노스 전시 패널](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/e344a022-ed87-4b1c-83c5-ddc9b954bc5c/%E1%84%92%E1%85%B5%E1%84%91%E1%85%B3%E1%84%82%E1%85%A9%E1%84%89%E1%85%B3-%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%89%E1%85%B5%E1%84%91%E1%85%A2%E1%84%82%E1%85%A5%E1%86%AF-001.png)
+![최종발표-008](https://github.com/user-attachments/assets/e3f90d3d-6349-4a5e-9516-8a188af7dfa8)
+
+![히프노스-전시패널-001](https://github.com/user-attachments/assets/42836344-8a03-4e7b-8520-f374c855294b)
 
 ## 프로젝트 개요
 
 Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하는 모바일 애플리케이션입니다. 이 프로젝트는 졸업 작품의 일환으로 개발되었으며, 운전 중 졸음운전으로 인한 사고를 예방하는 것을 목표로 합니다.
 
-![프로젝트 개요](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/99079b4e-811d-4522-ac94-e26f58246d38/%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC_%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD_ppt-002.png)
+![최종 발표 ppt-002](https://github.com/user-attachments/assets/ae9d153f-9de1-4e60-b46b-7de189c0e518)
 
 교통사고 원인의 1위가 졸음운전일 정도로 졸음은 사회에 큰 피해를 일으킵니다. 기존의 연구들은 졸음신호에 대한 명확한 해석이 어렵고, 이미 졸음이 상당히 진행된 상태에서 감지되는 한계가 있습니다. 따라서 근본적인 신호 취득이 가능한 뇌파를 통해 졸음을 조기에 감지하고 대응하는 시스템의 필요성이 대두되었습니다.
 
 ## 주요 기능
-
-![주요 기능](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/2d9c4117-1d00-4961-9f4b-4b7e4f3880b5/003.png)
 
 1. **실시간 운전자 졸음 감지**: Muse2 뇌파 측정 기기를 통해 실시간으로 운전자의 뇌파를 분석하여 졸음 상태를 감지합니다.
 2. **졸음 방지 알림**: 졸음 상태 감지 시 사용자가 선택한 음악을 재생하여 졸음을 깨웁니다.
@@ -20,7 +20,7 @@ Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하�
 
 ## 기술 스택
 
-![기술 스택](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/7e5edfe1-4c66-4fbc-86fa-77a512b5a993/005.png)
+![005](https://github.com/user-attachments/assets/caba98bd-ce79-4da7-8344-c2b0cc6f6f4d)
 
 - **Frontend**: Swift, Xcode (iOS 앱 개발)
 - **Backend**: Node.js, MySQL
@@ -36,7 +36,7 @@ Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하�
 
 ## 주요 화면 구성
 
-![앱 화면](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/d5100850-a685-4fd1-91d3-6bd53668af8f/%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A9%E1%86%BC-%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD-ppt-014.png)
+![최종-발표-ppt-015](https://github.com/user-attachments/assets/ccc48014-4967-4db6-80d4-305789d5d574)
 
 2. **홈 화면**: 
    - 날짜별 졸음감지 횟수 그래프 표시
@@ -51,7 +51,8 @@ Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하�
 
 ## 데이터 수집 및 분석 과정
 
-![데이터 수집 장비](https://prod-files-secure.s3.us-west-2.amazonaws.com/bb19166d-a0fa-441d-9390-7b493cb2b1d7/5e13ba13-7442-4559-8d9b-dcf15b3f212f/002.png)
+![최종 발표 ppt-007](https://github.com/user-attachments/assets/bead19e7-b6ef-46db-a98c-62fc405b0fb4)
+<img width="315" alt="뇌파데이터 조회 표" src="https://github.com/user-attachments/assets/fa98f19e-aed7-46dd-9b15-eee6656af26d">
 
 1. **실험 설계**:
    - 피험자: 20명 모집 (전날 수면시간 5시간 이하, 24시간 전 카페인 섭취 금지)
@@ -86,10 +87,3 @@ Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하�
 - Backend 개발
 - 데이터 분석 및 알고리즘 개발
 
-## 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 문의
-
-프로젝트에 대한 문의사항이 있으시면 [이슈](https://github.com/EunaAhn/Hypnos/issues)를 등록해 주세요.
