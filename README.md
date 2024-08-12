@@ -73,6 +73,7 @@ Hypnos는 뇌파를 기반으로 운전자의 졸음을 감지하고 예방하�
    - 앱에서 Alamofire를 통해 서버와 통신하여 데이터 조회 및 그래프 업데이트
 
 ## 프로젝트 성과
+![Untitled (6)](https://github.com/user-attachments/assets/6ccfa6cf-8a9c-4565-868c-59a406a61154)
 
 - 한국여성과학기술인육성재단 주관 2023 여대학원생 공학연구팀제 지원사업(심화과정) 참여
 - HCI 학회 논문 발표
